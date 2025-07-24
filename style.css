@@ -1,0 +1,346 @@
+body {
+   background:#470b15;
+   color: white;
+   font-family: sans-serif;
+}
+
+.navbar {
+    background: linear-gradient(red ,black);
+    color: black;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.navbar-toggle {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: white;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link:active {
+    color:white;
+}
+
+.nav-link::before {
+    content: "";
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color:white;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before, .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+}
+
+.hero-text {
+    width:max-content;
+    margin: 0 auto;
+    text-align: center;
+    font-family:sans-serif;
+}
+
+.hero-text p {
+    font-weight: bold;
+}
+
+.profile {
+    margin-top:2rem;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile img {
+    width:100%;
+    object-fit: contain; 
+    object-position:center;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    height: inherit;
+}
+
+h1 {
+    text-align: left;
+    
+}
+
+h1+p {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.container {
+     max-width: 100vw;
+     min-height:65vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap:2rem;
+     flex-wrap: wrap;
+     margin-top: 1rem;
+     padding:1rem;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    border: 2px solid white;
+    border-radius:20px;
+    box-shadow: white;
+}
+
+.card .name {
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 0.8rem;
+    background-color: yellow;
+    height: 50%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.card .name p {
+    padding-top: 0.3rem;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card .links {
+    height: 50%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+
+.links img {
+    width: 100%;
+    object-fit:cover;
+    border-radius:0 0 20px 20px;
+}
+
+.form-sec {
+  background-image: url(./assets/merry-go.avif);
+  background-size: cover;
+  background-position: center;
+}
+
+.form-sec .form-wrapper {
+  display: flex;
+  color: var(--clr);
+  padding-block: 2em;
+  max-width: 100vw;
+  padding-block: 5em;
+  /* min-height: 100vh; */
+  flex-wrap: wrap;
+  /* background-color: aliceblue; */
+  justify-content: center;
+  align-items: center;
+}
+
+.form-left {
+  height: 500px;
+  width: 400px;
+  background-color: gray;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.form-left form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2em;
+}
+
+form input,
+form textarea {
+  padding: 0.3rem;
+  font-size: 1.1rem;
+  outline: 2px solid yellow;
+  outline-offset: 0.12rem;
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+
+form  button {
+  padding: 0.7rem 3rem;
+  border-radius: 20px;
+  background-color: yellow;
+}
+
+.form button:hover {
+  background-color: black;
+  color: wheat;
+}
+
+::placeholder {
+  color: var(--bg-clr);
+}
+
+.form-left form h2,
+.loction-wrapper h2 {
+  font-size: 2rem;
+  color: white;
+  padding-top: 1em;
+}
+
+.form-right {
+  height: 500px;
+  width: 400px;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.loction-wrapper {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5em;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.loction-wrapper h2 {
+  color: black;
+  text-align: center;
+}
+
+
+.sec1 {
+  min-height: 100vh;
+}
+
+/* as all section are of same height i used tag selector above  */
+
+h1.intro, span  {
+   color: aliceblue;
+   text-transform:uppercase;
+   text-align: center;
+   padding-top:100px;
+   margin-bottom:30px ;
+   font-size: 45px;
+}
+
+/* general styling */
+
+h1,h2 {
+  text-align: center;
+}
+
+h3,h4 {
+  margin-left: 30px;
+}
+
+/* general styling ends here */
+
+address {
+  text-align: center;
+  font-size:30px;
+}
+
+/* h1 span styling */
+
+h1 span {
+  color:yellow
+}
+
+.intro a {
+  color:yellow
+}
+
+.about-para {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 40px;
+  margin: 50px 40px;
+}
+
+.social-fa-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-icons {
+  color:aliceblue;
+}
+
+.icons {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin: 40px;
+}
+
+.fa-brands {
+  font-size:50px;
+  line-height: 80px;
+}
+
+.icons:hover {border-radius:25% ;
+}
+
+.icons .fa-brands:hover {
+  color:black;
+}
+
+.big {
+  font-size: 4rem;
+}
+
+.edit {
+  color: black;
+}
+
+.edit:hover {
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
